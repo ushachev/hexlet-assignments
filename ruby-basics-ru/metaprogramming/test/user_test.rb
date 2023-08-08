@@ -8,7 +8,7 @@ class UserTest < Minitest::Test
     user = User.new name: 'Dima', birthday: '01-2-1890'
 
     assert_equal 'Dima', user.name
-    refute user.active
+    assert_not user.active
     assert_equal DateTime.parse('01-2-1890'), user.birthday
     assert_instance_of(DateTime, user.birthday)
 

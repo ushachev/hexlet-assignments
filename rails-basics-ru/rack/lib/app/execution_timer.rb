@@ -8,9 +8,9 @@ class ExecutionTimer
   end
 
   def call(env)
-    time_start = Time.now
+    time_start = Time.now.to_f
     status, headers, body = @app.call(env)
-    time_stop = Time.now
+    time_stop = Time.now.to_f
 
     puts "Response time: #{((time_stop - time_start) * 1_000_000).to_i} microsec"
 

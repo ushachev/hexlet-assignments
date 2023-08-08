@@ -1,6 +1,10 @@
+require: rubocop-rails
+
 AllCops:
   Exclude:
     - ./**/examples/**/*
+    - ./**/db/**/*
+    - ./**/bin/**
 
   NewCops: enable
 
