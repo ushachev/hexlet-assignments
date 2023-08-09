@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Task name 1
+  description: Task description 1
+  status: new
+  creator: John Doe
+  performer: Ivan Ivanoff
+  completed: false
+
+two:
+  name: Task name 2
+  description: Task description 2
+  status: archived
+  creator: Ivan Ivanoff
+  performer: John Doe
+  completed: true

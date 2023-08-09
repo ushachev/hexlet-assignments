@@ -1,0 +1,21 @@
+<%= form_with model: @task do |form| %>
+  <%= form.label :name %><br>
+  <%= form.text_field :name %><br>
+
+  <%= form.label :creator %><br>
+  <%= form.text_field :creator %><br>
+
+  <%= form.label :performer %><br>
+  <%= form.text_field :performer %><br>
+
+  <%= form.label :status %>
+  <%= form.select :status, ["new", "archived"] %><br>
+
+  <%= form.label :description %><br>
+  <%= form.text_area :description %><br>
+
+  <%= form.label :completed %>
+  <%= form.check_box :completed %>
+  <br>
+  <%= form.submit %>
+<% end %>

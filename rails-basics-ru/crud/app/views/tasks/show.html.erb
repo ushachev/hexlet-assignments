@@ -1,0 +1,14 @@
+<h1><%= @task.name %></h1>
+<p><%= @task.description %></p>
+<p>Status: <%= @task.status %></p>
+<p>Author: <%= @task.creator %> <i><%= @task.created_at.in_time_zone('Moscow').strftime("%H:%m %d.%m.%y") %></i></p>
+<p>Performer: <%= @task.performer.presence || 'absent' %></p>
+<p>Completed: <%= @task.completed ? 'yes' : 'no' %></p>
+<hr>
+
+<%= link_to 'Edit', edit_task_path(@task) %>
+<%= link_to 'Destroy', task_path(@task), data: {
+  turbo_method: :delete,
+  turbo_confirm: "Are you sure?"
+} %>
+<%= link_to 'Back to task list', tasks_path %>
