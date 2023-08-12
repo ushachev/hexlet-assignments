@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# BEGIN
+one:
+  name: Status1
+two:
+  name: Status2
+three:
+  name: Status3
+# END
