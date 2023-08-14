@@ -1,0 +1,41 @@
+en:
+  posts:
+    # BEGIN
+    index:
+      comments_count:
+        one: "%{count} comment"
+        other: "%{count} comments"
+        zero: no comments
+      new_post_link: New Post
+      table_title: Post title
+      title: Posts
+
+    new:
+      title: New Post
+
+    show:
+      body: Body
+      comments: Comments
+
+    create:
+      success: Post was created.
+
+    edit:
+      title: Editing post
+
+    update:
+      success: Post was updated.
+
+    destroy:
+      success: Post was destroyed.
+    # END
+
+    comments:
+      edit:
+        title: Editing comment
+
+      create:
+        success: Comment was created.
+
+      update:
+        success: Comment was updated.
