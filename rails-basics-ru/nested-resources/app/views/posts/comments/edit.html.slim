@@ -1,0 +1,8 @@
+h1 Editing post comment
+
+= render partial: 'form', locals: { comment: @comment, url: post_post_comment_path(@resource_post, @comment) }
+
+br
+
+div
+  =< link_to "Back to post", post_path(@resource_post)
